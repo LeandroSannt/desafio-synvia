@@ -1,4 +1,4 @@
-<h1>Requesitos para executar o projeto</h1>
+<h1>Requisitos para executar o projeto</h1>
 
 <ul>
   <li> mysql ou docker </h1>
