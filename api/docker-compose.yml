@@ -1,0 +1,15 @@
+version: '3.8' # Versão atualizada do Docker Compose
+
+services:
+  db-mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql@123
+      MYSQL_DATABASE: desafio
+    ports:
+      - '3395:3306'
+    volumes:
+      - db_data:/var/lib/mysql # Volume para persistir os dados do banco
+
+volumes:
+  db_data: # Definição do volume para persistir os dados do banco
